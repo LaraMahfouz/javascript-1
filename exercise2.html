@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+    #mydiv {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    }
+    </style>
+
+    <script>
+    /* TODO: write JS code here */
+    //onclick func
+    var colorX = 0
+    function nextColor(){
+    var colorsGroup=['red','green','blue']
+    document.getElementById("mydiv").style.backgroundColor=colorsGroup[colorX];
+    colorX++;
+    if(colorX===3){
+    colorX=0;
+    }   
+}
+   </script>
+   </head>
+   <body>
+   <div id="mydiv" onclick="nextColor()"></div>
+</body>
+</html>
