@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+    <ul style="color: blueviolet;">
+        <li id="First"> Lara </li>
+        <li>Dana</li>
+        <li>Hussam</li>
+        <li>Soso</li>
+        <li>Osama</li>
+      </ul>
+      <button onclick="myFunction()">Click Me</button>     
+
+    <script>
+ function myFunction() {
+  var list = document.getElementById("First");
+  if (list.style.display === "none") {
+    list.style.display = "block";
+  } else {
+    list.style.display = "none";
+  }
+}
+    </script> 
+</body>
+</html>
